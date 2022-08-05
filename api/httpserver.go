@@ -1,7 +1,7 @@
 package api
 
 import (
-	. "github.com/buzzryan/ryan-go/api/controller"
+	. "github.com/buzzryan/ryan-go/api/presenter"
 	"github.com/gin-gonic/gin"
 )
 
@@ -51,23 +51,3 @@ func setRouter(e *gin.Engine) *gin.Engine {
 	}
 	return e
 }
-
-// mock api (will be removed)
-
-func AcceptFriendReq(context *gin.Context) {}
-func RemoveFriend(context *gin.Context)    {}
-func SendFriendReq(context *gin.Context)   {}
-func GetUserInfo(context *gin.Context)     {}
-func UnlikeContent(context *gin.Context)   {}
-func LikeContent(context *gin.Context)     {}
-func GetAllContent(context *gin.Context)   {}
-func SignUp(ctx *gin.Context)              {}
-func PostContent(ctx *gin.Context)         {}
-func EditContent(ctx *gin.Context)         {}
-func DeleteContent(ctx *gin.Context)       {}
-func GetContent(ctx *gin.Context)          {}
-func PostComment(ctx *gin.Context)         {}
-func EditComment(ctx *gin.Context)         {}
-func DeleteComment(ctx *gin.Context)       {}
-func GetComment(ctx *gin.Context)          {}
-func UploadImage(ctx *gin.Context)         {}
